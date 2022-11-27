@@ -1,26 +1,5 @@
-const loadHomePage = function() {
+function loadHomePage() {
     const content = document.getElementById(`content`);
-
-    // Create navbar
-    const navbar = document.createElement(`div`);
-    navbar.classList.add(`navbar`);
-
-    const homeBtn = document.createElement(`button`);
-    homeBtn.classList.add(`navBtn`);
-    homeBtn.textContent = `Home`;
-    navbar.appendChild(homeBtn);
-
-    const menuBtn = document.createElement(`button`);
-    menuBtn.classList.add(`navBtn`);
-    menuBtn.textContent = `Menu`;
-    navbar.appendChild(menuBtn);
-
-    const contactBtn = document.createElement(`button`);
-    contactBtn.classList.add(`navBtn`);
-    contactBtn.textContent = `Contact`;
-    navbar.appendChild(contactBtn);
-
-    content.appendChild(navbar);
 
     // Create banner
     const banner = document.createElement(`div`);
