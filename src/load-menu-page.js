@@ -34,11 +34,15 @@ function loadMenuPage() {
     const menuDesc = document.createElement(`p`);
     menuDesc.textContent = `Updated daily with fresh tasty options`;
     titleContainer.appendChild(menuDesc);
+
+    const menuCards = document.createElement(`div`);
+    menuCards.classList.add(`menuCards`);
+    content.appendChild(menuCards);
     
     for (let i = 0; i < menuItens.length; i++) {
         const itemCard = document.createElement(`div`);
         itemCard.classList.add(`menuItemCard`);
-        content.appendChild(itemCard);
+        menuCards.appendChild(itemCard);
 
         const itemTitle = document.createElement(`h3`);
         itemTitle.textContent = menuItens[i].title;

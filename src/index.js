@@ -2,9 +2,11 @@ import { loadHomePage } from "./load-home-page";
 import { loadMenuPage } from "./load-menu-page";
 import { loadContactPage } from "./load-contact-page";
 import { loadNavbar } from "./load-navbar";
+import { loadFooter } from "./load-footer";
 
 loadNavbar();
 loadHomePage();
+loadFooter();
 addListeners();
 
 function addListeners() {
@@ -17,6 +19,7 @@ function addListeners() {
         content.textContent = null;
         loadNavbar();
         loadHomePage();
+        loadFooter();
         addListeners();
     });
 
@@ -24,6 +27,7 @@ function addListeners() {
         content.textContent = null;
         loadNavbar();
         loadMenuPage();
+        loadFooter();
         addListeners();
     });
 
@@ -31,6 +35,7 @@ function addListeners() {
         content.textContent = null;
         loadNavbar();
         loadContactPage();
+        loadFooter();
         addListeners();
     });
 };
