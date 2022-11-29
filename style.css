@@ -1,0 +1,167 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color-main: #666;
+}
+
+#content {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#content h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.navButtons button {
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-main);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: white;
+}
+
+/* Home Page */
+.banner {
+    background-color: #EEE;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 {
+    padding: 2rem;
+}
+.banner p {
+    width: min(80vw, 80ch);
+}
+
+.hours {
+    margin: 2rem 2rem;
+    margin-bottom: 3rem;
+}
+.hours h2 {
+    margin-bottom: 1rem;
+}
+
+.location {
+    margin: 1rem 2rem;
+}
+.location h2 {
+    margin-bottom: 1rem;
+}
+
+/* Menu Page */
+.menuTitle {
+    text-align: center;
+}
+.menuTitle h1 {
+    padding-top: 2rem;
+}
+.menuTitle p {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.menuCards,
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100vw;
+    padding: 0 2rem;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.menuItemCard,
+.contactCard {
+    background-color: #666;
+    padding: 1rem;
+    border-radius: 6px;
+    height: 16rem;
+    width: 12rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menuItemCard h3,
+.contactCard h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.itemDesc,
+.cardDesc {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1rem;
+}
+.itemPrice {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* Contact Page */
+.titleContainer {
+    padding: 2rem;
+}
+
+.cardTel {
+    text-align: center;
+    font-weight: bold;
+}
