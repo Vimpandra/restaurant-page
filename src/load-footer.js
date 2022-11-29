@@ -2,6 +2,7 @@ function loadFooter() {
     const content = document.getElementById(`content`);
 
     const footer = document.createElement(`div`);
+    footer.classList.add(`footer`);
     content.appendChild(footer);
 
     const p1 = document.createElement(`p`);
